@@ -217,8 +217,8 @@ public class WingsRunnable extends BukkitRunnable {
 		    }
 
 		    public static Vector getBackVector(Location loc) {
-		        final float newZ = (float) (loc.getZ() + (1 * Math.sin(Math.toRadians(loc.getYaw() + 90 * 1))));
-		        final float newX = (float) (loc.getX() + (1 * Math.cos(Math.toRadians(loc.getYaw() + 90 * 1))));
+		        final float newZ = (float) (loc.getZ() + (0.1 * Math.sin(Math.toRadians(loc.getYaw() + 90 * 1))));
+		        final float newX = (float) (loc.getX() + (0.1 * Math.cos(Math.toRadians(loc.getYaw() + 90 * 1))));
 		        return new Vector(newX - loc.getX(), 0, newZ - loc.getZ());
 		    }
 
